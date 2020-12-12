@@ -1,0 +1,7 @@
+{
+  "name": "ionicNewsApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
