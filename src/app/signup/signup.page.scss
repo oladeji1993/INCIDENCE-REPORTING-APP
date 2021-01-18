@@ -1,0 +1,173 @@
+.back-btn{
+    position:relative;
+    top:37px;
+    ion-icon{
+        color:#000;
+    }
+    
+}
+
+.title{
+    font-size: 16px;
+    color: #7A869A;
+    h1{
+        color:#FF9115;
+        font-weight:bold;
+
+    }
+}
+.header{
+    // margin-top:15%;
+    color:#FF9115;
+    font-weight:bold;
+    z-index: 999;
+    position: absolute;
+
+    p{
+        font-size:13.5px;
+        color:gray;
+        font-weight:lighter;
+    }
+}
+
+ion-item{
+    border:1px solid gray;
+    margin-right: 35px;
+    border-radius:5px;
+    height:45px;
+    font-size:15px;
+    padding: 0%;
+    font-weight: lighter;
+
+    ion-icon{
+        color:gray;
+    }
+  
+}
+
+
+// .terms{
+//     p{
+//         text-align: center;
+//         font-size:11.5px;
+//         padding-right:30px;
+//         font-weight: lighter;
+//     }
+
+//     span{
+//         color:#FF9115;
+//     }
+
+    
+// }
+.condition{
+    padding-bottom: 15px;
+    ion-checkbox{
+        width:5%;
+        height: auto;
+        border-radius: 0%;
+        font-weight:lighter
+    }
+
+    span{
+        color:#FF9115;
+    }
+
+}
+
+.reset{
+    padding-right:32px;
+    
+}
+
+.border{
+    width:100%;
+    
+
+}
+
+.child{
+    margin:0px 20%;
+    width:60%;
+    border-bottom: 1px solid gray
+}
+
+
+.signUP p{
+    padding: 5px 0px;
+    text-align:center;
+    font-size:12px;
+    font-weight: bold;
+    color:#000;
+}
+
+.sign-btn{
+    padding-top:0px;
+    text-align: center;
+    display:flex;
+}
+
+.facebook{
+    background:rgb(6, 6, 199);
+    margin:0px 20px;
+    color:#fff;
+    font-size:12px; 
+    padding:0px 20px;
+    border-radius:7px;
+}
+
+.google{
+    background:#F02727;
+    margin:0px 20px;
+    color:#fff;
+    font-size:12px; 
+    padding:0px 20px;
+    border-radius: 7px;
+}
+
+.btnn {
+    position: absolute;
+    top: 5%;
+    /* background: red; */
+    z-index: 999;
+    color:#000
+}
+
+
+.create{
+    text-align:center;
+    font-size:12px;
+    padding-top:10px;
+
+    span{
+        text-decoration:underline;
+        color:#FF9115;
+    }
+}
+
+.error {
+    color: rgb(223, 62, 62);
+    font-size: 11px;
+    border:none;
+}
+
+.error1 {
+    color: rgb(75, 75, 75);
+    border-bottom: 5px solid #ff0000;
+}
+
+
+.alert{
+    ion-icon{
+        visibility: hidden;
+    }
+}
+
+.alert .error1{
+    ion-icon{
+        visibility: visible;
+        color: rgb(223, 62, 62);
+        font-size: 11px;
+    }
+}
+

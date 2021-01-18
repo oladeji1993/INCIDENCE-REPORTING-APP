@@ -1,0 +1,28 @@
+.header{
+    // margin-top:15%;
+    color:#FF9115;
+    font-weight:bold;
+    z-index: 999;
+    position: absolute;
+
+    p{
+        font-size:13.5px;
+        color:gray;
+        font-weight:lighter;
+    }
+}
+
+ion-item{
+    border:1px solid gray;
+    margin-right: 35px;
+    border-radius:5px;
+    height:45px;
+    font-size:15px;
+    padding: 0%;
+    font-weight: lighter;
+
+    ion-icon{
+        color:gray;
+    }
+  
+}

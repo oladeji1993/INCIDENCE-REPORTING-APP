@@ -1,0 +1,44 @@
+<div class="content" >
+  <img src="assets/login.jpg" alt="logo">
+  <h3>Citizens<br>Reporting Solution App</h3>
+  <h1></h1>
+</div>
+<ion-content>
+  <div class="whole">
+    <form #form="ngForm"(ngSubmit)="loginUser(form)">
+      <div class="input">
+        <ion-item lines="none">
+          <ion-input name="email" type="email" [(ngModel)] = "email" required placeholder="Email"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-input type="password" name="password" [(ngModel)] = "password" placeholder="Password">
+            
+          </ion-input>
+          <ion-button fill="clear"><ion-icon name="eye-outline"></ion-icon></ion-button>
+        </ion-item>
+      </div>
+      <ion-button  class="signUp" type="Submit" [disabled]= "form.invalid" expand="block">Sign in </ion-button>
+    </form>
+    
+    <div class="forgot">
+      <ion-button fill="clear" (click)="goToReset()">Forgot Password</ion-button>
+    </div>
+    <div class="log">
+      <p>LOG IN WITH</p>
+    </div>
+    
+    <div class="sign-btn">
+      <ion-button class="facebook" size="small" fill="clear">Facebook </ion-button>
+      <ion-button class="google" size="small" fill="clear">Google</ion-button>
+    </div>
+
+    <div class="create">
+      <p>Don't you have an account? <span (click)="goToSign()" >Create one</span></p>
+    </div>
+
+
+   
+  </div>
+  <!-- <img class="oval" src="assets/Oval (1).png" alt="oval">
+  <img class="oval" src="assets/Oval.png" alt="oval"> -->
+</ion-content>

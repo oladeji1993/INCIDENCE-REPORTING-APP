@@ -1,0 +1,70 @@
+<div class="dash-head">
+  <img src="assets/face.png">
+  <p>Welcome, Oladeji</p>
+<ion-button (click)="logoutUser()" >LOGOUT</ion-button>
+</div>
+<div>
+  <ion-slides pager="false">
+    <ion-slide>
+      <h5>Lastest</h5>
+    </ion-slide>
+    <ion-slide>
+      <h5>Politics</h5>
+    </ion-slide>
+    <ion-slide>
+      <h5>Business</h5>
+    </ion-slide>
+    <ion-slide>
+      <h5>Technology</h5>
+    </ion-slide>
+    <ion-slide>
+      <h5>World News</h5>
+    </ion-slide>
+  </ion-slides>
+</div>
+<ion-content padding text-center>
+    <ion-refresher slot="fixed">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  
+<ion-list class="post-list">
+  <ion-item *ngFor="let con of listContents">
+    <div class="app-content">
+      <h2>{{con.title['rendered']}}</h2>
+      <p [innerHTML]="con.content['rendered']"></p>
+      <div class="display-f">
+        <p class="date"><i>Date: {{con.date}}</i></p>
+        <!-- <p class="date"><i>Date: {{con.id}}</i></p> -->
+        <button (click)="deletePost(con['id'])"> <ion-icon name="trash-outline"></ion-icon></button>
+        <button (click)="lauchModal(con)" class="edit"><ion-icon name="create-outline"></ion-icon></button>
+      </div>
+      
+    </div>
+  </ion-item>
+</ion-list>
+
+
+<div>
+  <h2>Submit a post</h2>
+  <div class="input-container">
+      <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" [(ngModel)] = "title" placeholder="title of post" required>
+      </div>
+      <div class="form-group">
+          <textarea [(ngModel)] = "content" id="content" cols="30" rows="3" placeholder="Contents here" required></textarea>
+      </div>
+
+      
+      <button type="submit" (click)="sendPost()" class="btn btn-success">Submit</button>
+  </div>
+  <!-- take pictures -->
+  
+  <!-- <ion-fab vertical="bottom" horizontal="left" slot="fixed">
+    <ion-fab-button (click)="addPhotoToGallery()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> -->
+  <marquee direction="right" class="marquee">Feed Us with the latest happenings in your area</marquee>
+</div>
+</ion-content>

@@ -1,20 +1,28 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-slides pager="true">
+    
+    <ion-slide>
+      <div>
+        <img src="assets/slide.jpg" alt="logo">
+        <h1>Welcome To <br>Citizens Reporting Solution App</h1>
+      </div>
+    </ion-slide>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-slide>
+      <div>
+        <img src="assets/slide_news2.jpg" alt="logo">
+          <h1>Home of Latest News</h1>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div>
+        <img src="assets/slide_news3.jpg" alt="logo">
+        <h1>Post recent Happenings</h1>-
+      </div>
+      <ion-button (click)="goToDashboard()" fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+    </ion-slide>
+    
+  </ion-slides>
 </ion-content>

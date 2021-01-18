@@ -1,0 +1,108 @@
+.dash-head{
+    margin-top:40px;
+    padding: 0px 20px;
+    display:flex;
+    padding-bottom:15px;
+    img{
+        
+        width:50px;
+        height:auto;
+        border-radius: 60%;
+        box-shadow: 2px 3px 5px gray;
+        
+    }
+    
+
+    p{
+        font-weight:bold;
+        font-size:16px;
+        width:80%;
+        padding-top:3px;
+        padding-left:10px;
+        width:90%;
+        
+    }
+
+
+    ion-button{
+        padding-top:3px;
+        margin-right:5px;
+        font-size:14px;
+        color:black;
+        
+    }
+    
+    
+    
+    // img{
+        
+    //     width:40px;
+    //     height:auto;
+    //     padding-top:10px;
+    //     }
+    //     // padding:0px 10px;
+   
+
+}
+
+.simg{
+    padding-top:10px;
+}
+
+ion-slides{
+    width:100%;
+    padding:0px 120px;
+    padding-top:0px;
+    color:#FF9115;
+}
+
+// ion-slides:hover{
+//    border-bottom: 1px solid blue;
+//    color:blue;
+// }
+
+.app-content h2{
+    font-weight:bold    
+}
+
+.form-group input{
+    margin:7px;
+}
+.form-group textarea{
+    margin:7px;
+}
+
+.marquee{
+    background: brown;
+    color:white;
+    padding:5px;
+}
+
+
+.btn-success{
+    margin-left:3%;
+}
+
+.input-container{
+    padding-left:10%;
+    padding-bottom:10%;
+}
+
+.display-f{
+    display:flex;
+
+    button{
+        font-size: 25px;
+        background-color:#fff;
+        color:red;
+        // padding-left:5%
+    }
+}
+
+.date{
+    // padding-right:15%;
+}
+
+.display-f .edit{
+    color:blue
+}

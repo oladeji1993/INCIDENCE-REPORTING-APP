@@ -1,0 +1,42 @@
+<ion-button class="btnn" (click)="back()" fill="clear" ><ion-icon name="chevron-back-outline"></ion-icon></ion-button>
+<div class="pl-20 pt-50 title">
+  <h1>Let's Get Started</h1>
+  <p>Sign up or login to get started</p>
+</div>
+<ion-content>
+  <div class="header pl-20">
+
+    <div>
+      <!-- email -->
+      
+        <ion-item lines="none">
+          <ion-input type="email" [(ngModel)] ="email" placeholder="Email Address"></ion-input>
+        </ion-item>
+        <br>
+        <!-- PASSWORD -->
+        <ion-item lines="none">
+          <ion-input type="password"  [(ngModel)] ="password" placeholder="Password"></ion-input>
+          <!-- <ion-button fill="clear"><ion-icon lastName="eye-outline"></ion-icon></ion-button> -->
+        </ion-item>
+
+      <div class="condition">
+        <ion-button type="submit" (click)="signupUser()" class="reset" expand="block">Sign Up</ion-button>
+      </div>
+    </div>
+      <br>
+
+    <div class="signUP">
+      <p>SIGN UP WITH</p>
+    </div>
+    
+    <div class="sign-btn">
+      <ion-button class="facebook" size="large" fill="clear">Facebook </ion-button>
+      <ion-button class="google" size="large" fill="clear">Google</ion-button>
+    </div>
+
+    <div class="create">
+      <p>Already have an account? <span (click)="goToSign()">Sign in</span></p>
+    </div>
+  </div>
+  
+</ion-content>

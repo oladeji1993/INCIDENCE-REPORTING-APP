@@ -1,0 +1,20 @@
+<div class="header pl-20 pt-10">
+
+  <div>
+    <div class="pl-20 title">
+      <h5>EDIT POST</h5>
+    </div>
+      <ion-item lines="none">
+        <ion-input type="text" [(ngModel)]="heading" (ionChange)="Test()" placeholder="Title"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item lines="none">
+        <ion-input type="text" [(ngModel)]="body" placeholder="Content"></ion-input>
+        <!-- <ion-button fill="clear"><ion-icon lastName="eye-outline"></ion-icon></ion-button> -->
+      </ion-item>
+
+    <div class="condition">
+      <ion-button type="submit" (click)="submitPost()" class="reset">Submit Post</ion-button>
+    </div>
+  </div>
+</div>
